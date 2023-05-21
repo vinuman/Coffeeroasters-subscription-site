@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <div>
+      <nav>
         <img src={logo}></img>
         <ul>
           <li>
@@ -29,7 +29,7 @@ const Footer = () => {
             </Link>
           </li>
         </ul>
-      </div>
+      </nav>
     </footer>
   );
 };

@@ -6,10 +6,15 @@ import danche from "./assets/home/desktop/image-danche.png";
 import coffeebean from "./assets/home/desktop/icon-coffee-bean.svg";
 import benefits from "./assets/home/desktop/icon-gift.svg";
 import shipping from "./assets/home/desktop/icon-truck.svg";
+import arrow from "./assets/plan/desktop/icon-arrow.svg";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import logo from "./assets/shared/desktop/logo.svg";
 
 const Home = () => {
+  const handleArrowClick = (e) => {
+    e.preventDefault();
+    const target = document.querySelector(".our-collection");
+    target.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <main>
@@ -23,6 +28,11 @@ const Home = () => {
           </p>
           <button className="btn">Create your plan</button>
         </div>
+        <img
+          onClick={handleArrowClick}
+          className="home-arrow"
+          src={arrow}
+        ></img>
       </main>
 
       <section className="our-collection">
@@ -141,34 +151,6 @@ const Home = () => {
           Create your plan
         </button>
       </section>
-      <footer>
-        <div>
-          <img src={logo}></img>
-          <ul>
-            <li>
-              <Link style={{ textDecoration: "none", color: "#83888F" }} to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                style={{ textDecoration: "none", color: "#83888F" }}
-                to="/about"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                style={{ textDecoration: "none", color: "#83888F" }}
-                to="/create-plan"
-              >
-                Create your Plan
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </footer>
     </>
   );
 };

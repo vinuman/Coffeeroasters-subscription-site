@@ -58,10 +58,9 @@ main > img {
 
 .main-content {
   position: absolute;
-  top: 0;
   color: var(--light-cream);
-  top: 190%;
-  left: 10%;
+  top: 25%;
+  left: 13%;
 }
 
 .main-content > h1 {
@@ -92,6 +91,20 @@ main > img {
 
 .btn:hover {
   background-color: #66d2cf;
+}
+
+.home-arrow {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.home-arrow:hover {
+  filter: invert(0.5);
+  scale: 1.2;
 }
 
 .our-collection {
@@ -274,7 +287,43 @@ main > img {
 
 /* FOOTER */
 footer {
-  border: 1px solid red;
-  position: absolute;
-  top: 400%;
+  width: 90%;
+  height: 6rem;
+  position: fixed;
+  left: 5%;
+  bottom: 0;
+  background-color: #2c343e;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+
+footer > nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer > nav > ul {
+  width: 40%;
+  color: #fefcf7;
+}
+
+footer > nav > img {
+  width: 23.6rem;
+  height: 2.6rem;
+  filter: invert(1);
+}
+
+.social-media {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.social-media > img {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 5rem;
 }
