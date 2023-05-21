@@ -49,7 +49,6 @@ li {
 main {
   height: 6em;
   padding-top: 2rem;
-  position: relative;
 }
 
 main > img {
@@ -214,6 +213,7 @@ main > img {
 .how-it-works {
   position: absolute;
   top: 305%;
+  left: 15%;
 }
 
 .how-it-works > h3 {
@@ -270,4 +270,11 @@ main > img {
   opacity: 0.7;
   line-height: 3rem;
   padding-bottom: 3rem;
+}
+
+/* FOOTER */
+footer {
+  border: 1px solid red;
+  position: absolute;
+  top: 400%;
 }
