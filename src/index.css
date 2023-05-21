@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --dark-cyan: #0e8784;
+  --dark-grey-blue: #333d4b;
+  --pale-orange: #fdd6ba;
+  --light-cream: #fefcf7;
+  --grey: #83888f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Fraunces", serif;
+}
+
+body {
+  padding: 4rem 8rem;
+  background-color: var(--light-cream);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+
+nav > ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+main {
+  height: 6em;
+  padding-top: 2rem;
+  position: relative;
+}
+
+main > img {
+  border-radius: 1rem;
+  filter: contrast(120%);
+}
+
+.main-content {
+  position: absolute;
+  top: 0;
+  color: var(--light-cream);
+  top: 190%;
+  left: 10%;
+}
+
+.main-content > h1 {
+  width: 50%;
+  font-size: 7.2rem;
+  padding-bottom: 2rem;
+}
+.main-content > p {
+  width: 40%;
+  font-size: 1.6rem;
+  opacity: 0.7;
+  line-height: 3rem;
+  padding-bottom: 3rem;
+}
+
+.btn {
+  width: 21.7rem;
+  height: 5.6rem;
+  background-color: var(--dark-cyan);
+  color: var(--light-cream);
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Fraunces", serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #66d2cf;
+}
+
+.our-collection {
+  position: absolute;
+  width: 80%;
+  height: 50rem;
+  top: 110%;
+  display: flex;
+  margin-left: 6rem;
+}
+
+.our-collection > p {
+  font-size: 15rem;
+  font-weight: bolder;
+  color: var(--grey);
+  z-index: -1000;
+  position: absolute;
+  top: 0;
+  left: 3%;
+  opacity: 0.15;
+}
+
+.our-collection > .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.our-collection > .item > img {
+  width: 25rem;
+  height: 19rem;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+}
+.our-collection > .item > h2 {
+  font-size: 2.4rem;
+  padding-bottom: 2rem;
+}
+.our-collection > .item > p {
+  font-size: 1.6rem;
+  width: 90%;
+  text-align: center;
+  opacity: 0.7;
+  font-weight: lighter;
+  line-height: 3rem;
+}
+
+.why-us {
+  width: 90%;
+  height: 57.7rem;
+  position: absolute;
+  top: 200%;
+  background-color: var(--dark-grey-blue);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 1rem;
+}
+
+.main-card {
+  width: 45%;
+}
+
+.main-card > h2 {
+  font-size: 4rem;
+  color: var(--light-cream);
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.main-card > p {
+  font-size: 1.6rem;
+  color: var(--light-cream);
+  text-align: center;
+  opacity: 0.7;
+  line-height: 3rem;
+}
+
+.child-card-container {
+  width: 90%;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  border: 1px soild red;
+  bottom: -10rem;
+}
+
+.child-card {
+  width: 35rem;
+  height: 38rem;
+  background-color: var(--dark-cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  border-radius: 1rem;
+}
+
+.child-card > img {
+  width: 7rem;
+  height: 7rem;
+}
+.child-card > h3 {
+  font-size: 2.4rem;
+  color: var(--light-cream);
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+}
+.child-card > p {
+  font-size: 1.6rem;
+  color: var(--light-cream);
+  line-height: 3rem;
+  width: 80%;
+  text-align: center;
+}
+
+.how-it-works {
+  position: absolute;
+  top: 305%;
+}
+
+.how-it-works > h3 {
+  font-size: 2.4rem;
+  color: var(--grey);
+}
+
+.directions {
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.circle {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid var(--dark-cyan);
+}
+
+.lines {
+  width: 100%;
+  height: 1px;
+  border: 1px solid var(--pale-orange);
+}
+
+.how-cards-container {
+  display: flex;
+  justify-content: space-between;
+  width: 125%;
+}
+
+.how-card {
+  width: 25rem;
+}
+
+.how-card > h2 {
+  font-size: 7.2rem;
+  color: var(--pale-orange);
+  font-weight: bolder;
+  padding-bottom: 2rem;
+}
+.how-card > h3 {
+  font-size: 3.2rem;
+  color: var(--dark-grey-blue);
+  font-weight: bolder;
+  padding-bottom: 2rem;
+}
+.how-card > p {
+  font-size: 1.6rem;
+  color: var(--dark-grey-blue);
+  font-weight: lighter;
+  opacity: 0.7;
+  line-height: 3rem;
+  padding-bottom: 3rem;
+}
