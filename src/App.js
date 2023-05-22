@@ -44,39 +44,44 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/create-plan" element={<CreatePlan />} />
       </Routes>
-      {/* <footer>
-        <nav>
-          <img src={logo}></img>
-          <ul>
-            <li>
-              <Link style={{ textDecoration: "none", color: "#83888F" }} to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                style={{ textDecoration: "none", color: "#83888F" }}
-                to="/about"
-              >
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link
-                style={{ textDecoration: "none", color: "#83888F" }}
-                to="/create-plan"
-              >
-                Create your Plan
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <div className="social-media">
-          <img src={facebook}></img>
-          <img src={twitter}></img>
-          <img src={instagram}></img>
-        </div>
-      </footer> */}
+      {
+        <footer>
+          <nav>
+            <img src={logo}></img>
+            <ul>
+              <li>
+                <Link
+                  style={{ textDecoration: "none", color: "#83888F" }}
+                  to="/"
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  style={{ textDecoration: "none", color: "#83888F" }}
+                  to="/about"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  style={{ textDecoration: "none", color: "#83888F" }}
+                  to="/create-plan"
+                >
+                  Create your Plan
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <div className="social-media">
+            <img src={facebook}></img>
+            <img src={twitter}></img>
+            <img src={instagram}></img>
+          </div>
+        </footer>
+      }
     </Router>
   );
 }
