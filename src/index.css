@@ -76,23 +76,6 @@ main > img {
   padding-bottom: 3rem;
 }
 
-.btn {
-  width: 21.7rem;
-  height: 5.6rem;
-  background-color: var(--dark-cyan);
-  color: var(--light-cream);
-  font-size: 1.8rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 1rem;
-  font-family: "Fraunces", serif;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #66d2cf;
-}
-
 .home-arrow {
   position: absolute;
   top: 20%;
@@ -458,10 +441,11 @@ main > img {
   opacity: 0.4;
   font-weight: bolder;
   letter-spacing: 0.2rem;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
   border-bottom: 1px solid var(--dark-grey-blue);
   text-align: center;
+  border-radius: 1rem;
 }
 
 .coffee-selection-right {
@@ -548,6 +532,56 @@ main > img {
   font-size: 2.4rem;
   font-weight: bolder;
   color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.empty {
+  width: 5rem;
+  display: inline-block;
+  border-bottom: 1px solid #0e8784;
+}
+
+.active {
+  background-color: var(--dark-cyan);
+}
+
+.active:hover {
+  background-color: var(--dark-cyan);
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.btn1 {
+  width: 21.7rem;
+  height: 5.6rem;
+  background-color: #e2dedb;
+  color: var(--light-cream);
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Fraunces", serif;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.btn {
+  width: 21.7rem;
+  height: 5.6rem;
+  background-color: var(--dark-cyan);
+  color: var(--light-cream);
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Fraunces", serif;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #66d2cf;
 }
 
 /* FOOTER */
