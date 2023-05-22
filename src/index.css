@@ -22,12 +22,12 @@ html {
 body {
   padding: 4rem 8rem;
   background-color: var(--light-cream);
+  position: relative;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  position: sticky;
 }
 
 nav > ul {
@@ -59,7 +59,7 @@ main > img {
 .main-content {
   position: absolute;
   color: var(--light-cream);
-  top: 25%;
+  top: 7%;
   left: 13%;
 }
 
@@ -95,7 +95,7 @@ main > img {
 
 .home-arrow {
   position: absolute;
-  top: 80%;
+  top: 20%;
   left: 50%;
   width: 6rem;
   height: 3rem;
@@ -108,12 +108,14 @@ main > img {
 }
 
 .our-collection {
-  position: absolute;
+  /* position: absolute; */
+  margin-top: 60rem;
+  margin-bottom: 4rem;
   width: 80%;
   height: 50rem;
-  top: 110%;
   display: flex;
-  margin-left: 6rem;
+  margin-left: 12rem;
+  position: relative;
 }
 
 .our-collection > p {
@@ -122,9 +124,10 @@ main > img {
   color: var(--grey);
   z-index: -1000;
   position: absolute;
-  top: 0;
-  left: 3%;
+  top: 3%;
+  left: 0;
   opacity: 0.15;
+  width: 120%;
 }
 
 .our-collection > .item {
@@ -157,13 +160,13 @@ main > img {
 .why-us {
   width: 90%;
   height: 57.7rem;
-  position: absolute;
-  top: 200%;
   background-color: var(--dark-grey-blue);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   border-radius: 1rem;
+  margin-left: 6rem;
+  position: relative;
 }
 
 .main-card {
@@ -186,11 +189,10 @@ main > img {
 }
 
 .child-card-container {
-  width: 90%;
+  width: 100%;
   position: absolute;
   display: flex;
   justify-content: space-around;
-  border: 1px soild red;
   bottom: -10rem;
 }
 
@@ -224,9 +226,8 @@ main > img {
 }
 
 .how-it-works {
-  position: absolute;
-  top: 305%;
-  left: 15%;
+  margin-top: 20rem;
+  margin-bottom: 5rem;
 }
 
 .how-it-works > h3 {
@@ -239,6 +240,7 @@ main > img {
   align-items: center;
   padding-top: 6rem;
   padding-bottom: 4rem;
+  width: 80%;
 }
 
 .circle {
@@ -249,7 +251,7 @@ main > img {
 }
 
 .lines {
-  width: 100%;
+  width: 80%;
   height: 1px;
   border: 1px solid var(--pale-orange);
 }
@@ -257,7 +259,8 @@ main > img {
 .how-cards-container {
   display: flex;
   justify-content: space-between;
-  width: 125%;
+  width: 90%;
+  padding-bottom: 4rem;
 }
 
 .how-card {
@@ -285,11 +288,134 @@ main > img {
   padding-bottom: 3rem;
 }
 
+/* ABOUT US */
+
+.about-us {
+  width: 100%;
+  height: 45rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  background: url(./assets//about/desktop/image-hero-whitecup.jpg);
+  color: var(--light-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8rem;
+}
+
+.about-us > h1 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+.about-us > p {
+  font-size: 1.6rem;
+  width: 40%;
+  opacity: 0.7;
+  line-height: 3rem;
+}
+
+.commitment {
+  width: 90%;
+  margin: 10rem auto;
+  display: flex;
+}
+
+.commitment-left {
+  width: 44.5rem;
+  height: 52rem;
+  background: url(./assets/about/desktop/image-commitment.jpg);
+  border-radius: 1rem;
+}
+
+.commitment-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8rem;
+}
+
+.commitment-right > h2 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+.commitment-right > p {
+  font-size: 1.6rem;
+  opacity: 0.5;
+  line-height: 2.5rem;
+}
+
+.quality {
+  width: 100%;
+  height: 50rem;
+  color: var(--light-cream);
+  background-color: var(--dark-grey-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6rem;
+  position: relative;
+  border-radius: 1rem;
+}
+
+.quality > h2 {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+.quality > p {
+  font-size: 1.6rem;
+  opacity: 0.5;
+  line-height: 2.5rem;
+  width: 50%;
+}
+
+.quality-img {
+  width: 44.5rem;
+  height: 47rem;
+  position: absolute;
+  top: -8rem;
+  right: 10%;
+  border-radius: 1rem;
+}
+
+.headquarters {
+  margin-top: 12rem;
+  margin-left: 6rem;
+  width: 80%;
+  margin-bottom: 16rem;
+}
+
+.headquarters > h2 {
+  font-size: 2.4rem;
+  color: var(--grey);
+  padding-bottom: 6rem;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-card {
+  width: 30%;
+}
+
+.location-card > h3 {
+  font-size: 3.2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.location-card > address {
+  font-size: 1.6rem;
+  color: var(--grey);
+}
+
 /* FOOTER */
 footer {
   width: 90%;
-  height: 6rem;
-  position: fixed;
+  height: 12rem;
+  position: absolute;
   left: 5%;
   bottom: 0;
   background-color: #2c343e;
