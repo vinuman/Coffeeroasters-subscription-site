@@ -44,7 +44,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/create-plan" element={<CreatePlan />} />
       </Routes>
-      <footer>
+      {/* <footer>
         <nav>
           <img src={logo}></img>
           <ul>
@@ -76,7 +76,7 @@ function App() {
           <img src={twitter}></img>
           <img src={instagram}></img>
         </div>
-      </footer>
+      </footer> */}
     </Router>
   );
 }
