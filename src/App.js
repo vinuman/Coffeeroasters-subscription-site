@@ -44,6 +44,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/create-plan" element={<CreatePlan />} />
       </Routes>
+
       {
         <footer>
           <nav>

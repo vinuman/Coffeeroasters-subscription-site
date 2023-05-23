@@ -14,6 +14,8 @@ const Create = () => {
   const [selection4, setSelection4] = useState("");
   const [selection5, setSelection5] = useState("");
 
+  const [finalPrice, setFinalPrice] = useState("");
+
   useEffect(() => {
     if (selection1 && selection2 && selection3 && selection4 && selection5) {
       document.getElementById("plan-btn").classList.add("btn");
@@ -22,9 +24,42 @@ const Create = () => {
       document.getElementById("plan-btn").classList.remove("btn");
       document.getElementById("plan-btn").classList.add("btn1");
     }
+    if (selection3 == "250g" && selection5 == "Every week") {
+      setFinalPrice("28.8");
+    }
+    if (selection3 == "250g" && selection5 == "Every 2 week") {
+      setFinalPrice("19.20");
+    }
+    if (selection3 == "250g" && selection5 == "Every Month") {
+      setFinalPrice("12.00");
+    }
+    if (selection3 == "500g" && selection5 == "Every week") {
+      setFinalPrice("52.00");
+    }
+    if (selection3 == "500g" && selection5 == "Every 2 week") {
+      setFinalPrice("35.00");
+    }
+    if (selection3 == "500g" && selection5 == "Every Month") {
+      setFinalPrice("22.00");
+    }
+    if (selection3 == "1000g" && selection5 == "Every week") {
+      setFinalPrice("22.00");
+    }
+    if (selection3 == "1000g" && selection5 == "Every 2 week") {
+      setFinalPrice("32.00");
+    }
+    if (selection3 == "1000g" && selection5 == "Every Month") {
+      setFinalPrice("42.00");
+    }
   }, [selection1, selection2, selection3, selection4, selection5]);
 
-  const handleMyPlanButton = () => {};
+  const handleMyPlanButton = () => {
+    document.querySelector(".modal").classList.add("show");
+  };
+
+  const handleModalClick = () => {
+    document.querySelector(".modal").classList.remove("show");
+  };
 
   return (
     <>
@@ -314,7 +349,17 @@ const Create = () => {
                   }`}
                 >
                   <h2>Every week</h2>
-                  <p>$7.20 per shipment. Includes free first-class shipping.</p>
+                  <p>
+                    $
+                    {selection3 == "250g"
+                      ? "7.20"
+                      : selection3 == "500g"
+                      ? "13.00"
+                      : selection3 == "1000g"
+                      ? "22.00"
+                      : "7.20"}{" "}
+                    per shipment. Includes free first-class shipping.
+                  </p>
                 </div>
                 <div
                   onClick={() => setSelection5("Every 2 week")}
@@ -323,7 +368,17 @@ const Create = () => {
                   }`}
                 >
                   <h2>Every 2 weeks</h2>
-                  <p>$9.60 per shipment. Includes free priority shipping.</p>
+                  <p>
+                    $
+                    {selection3 == "250g"
+                      ? "9.60"
+                      : selection3 == "500g"
+                      ? "17.50"
+                      : selection3 == "1000g"
+                      ? "32.00"
+                      : "9.60"}{" "}
+                    per shipment. Includes free priority shipping.
+                  </p>
                 </div>
                 <div
                   onClick={() => setSelection5("Every Month")}
@@ -332,7 +387,17 @@ const Create = () => {
                   }`}
                 >
                   <h2>Every Month</h2>
-                  <p>$12.00 per shipment. Includes free priority shipping.</p>
+                  <p>
+                    $
+                    {selection3 == "250g"
+                      ? "22.00"
+                      : selection3 == "500g"
+                      ? "32.00"
+                      : selection3 == "1000g"
+                      ? "42.00"
+                      : "22.00"}{" "}
+                    per shipment. Includes free priority shipping.
+                  </p>
                 </div>
               </div>
             ) : (
@@ -363,12 +428,48 @@ const Create = () => {
             </p>
           </div>
           <button
+            onClick={handleMyPlanButton}
             style={{ alignSelf: "flex-end", marginRight: "12rem" }}
             className="btn1"
             id="plan-btn"
           >
             Create my plan!
           </button>
+        </div>
+      </section>
+
+      <section onClick={handleModalClick} className="modal order-summary">
+        <div className="modal-content">
+          <h2>Order Summary</h2>
+          <p>
+            "I drink my coffee using{" "}
+            <span style={{ color: "#0E8784" }}>
+              {selection1 || <div className="empty"></div>}
+            </span>
+            , with a{" "}
+            <span style={{ color: "#0E8784" }}>
+              {selection2 || <div className="empty"></div>}
+            </span>{" "}
+            type of bean.{" "}
+            <span style={{ color: "#0E8784" }}>
+              {selection3 || <div className="empty"></div>}
+            </span>
+            , sent to me{" "}
+            <span style={{ color: "#0E8784" }}>
+              {selection5 || <div className="empty"></div>}
+            </span>
+            "
+          </p>
+
+          <p className="confirmation-text">
+            Is this correct? You can proceed to checkout or go back to plan
+            selection if something is off. Subscription discount codes can also
+            be redeemed at the checkout.{" "}
+          </p>
+          <div className="checkout">
+            <p>${finalPrice}/mo</p>
+            <button className="btn">Checkout</button>
+          </div>
         </div>
       </section>
     </>
