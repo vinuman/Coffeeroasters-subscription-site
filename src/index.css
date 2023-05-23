@@ -501,6 +501,7 @@ main > img {
   padding: 4rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .order-summary > h3 {
@@ -799,6 +800,7 @@ footer > nav > img {
   .how-it-works {
     margin-top: 40rem;
     margin-left: 1rem;
+    padding-left: 0;
   }
 
   .how-cards-container {
@@ -894,5 +896,25 @@ footer > nav > img {
 
   .location-card > address {
     font-size: 1.5rem;
+  }
+
+  .work1 {
+    padding: 2rem;
+  }
+
+  .coffee-selection-left {
+    display: none;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion > .top > p {
+    font-size: 3.2rem;
+  }
+
+  #plan-btn {
+    width: 70%;
   }
 }

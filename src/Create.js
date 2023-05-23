@@ -64,7 +64,7 @@ const Create = () => {
   return (
     <>
       <section className="create-plan">
-        <h1>Create plan</h1>
+        <h1>Create a plan</h1>
         <p>
           Coffee the way you wanted it to be. For coffee delivered tomorrow, or
           next week. For whatever brew method you use. For choice, for
@@ -78,11 +78,9 @@ const Create = () => {
           width: "100%",
           marginLeft: "0",
           borderRadius: "1rem",
-          paddingTop: "2rem",
-          paddingLeft: "4rem",
           marginTop: "8rem",
         }}
-        className="how-it-works"
+        className="how-it-works work1"
       >
         <div className="directions">
           <div className="circle"></div>
