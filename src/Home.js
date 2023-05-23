@@ -7,18 +7,15 @@ import coffeebean from "./assets/home/desktop/icon-coffee-bean.svg";
 import benefits from "./assets/home/desktop/icon-gift.svg";
 import shipping from "./assets/home/desktop/icon-truck.svg";
 import arrow from "./assets/plan/desktop/icon-arrow.svg";
+
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
 const Home = () => {
-  const handleArrowClick = (e) => {
-    e.preventDefault();
-    const target = document.querySelector(".our-collection");
-    target.scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <>
       <main>
         <img className="desktop-img" src={mainImage}></img>
+
         <div className="main-content">
           <h1>Great coffee made simple.</h1>
           <p>
@@ -28,46 +25,49 @@ const Home = () => {
           </p>
           <button className="btn">Create your plan</button>
         </div>
-        <img
-          onClick={handleArrowClick}
-          className="home-arrow"
-          src={arrow}
-        ></img>
       </main>
 
       <section className="our-collection">
         <p>Our Collection</p>
         <div className="item">
           <img src={granespresso}></img>
-          <h2>Gran Espresso</h2>
-          <p>
-            Light and flavorful blend with cocoa and black pepper for an intense
-            experience.
-          </p>
+          <div className="item-des">
+            <h2>Gran Espresso</h2>
+            <p>
+              Light and flavorful blend with cocoa and black pepper for an
+              intense experience.
+            </p>
+          </div>
         </div>
         <div className="item">
           <img src={planalto}></img>
-          <h2>Planalto</h2>
-          <p>
-            Brazilian dark roast with rich and velvety body, and hints of fruits
-            and nuts.
-          </p>
+          <div className="item-des">
+            <h2>Planalto</h2>
+            <p>
+              Brazilian dark roast with rich and velvety body, and hints of
+              fruits and nuts.
+            </p>
+          </div>
         </div>
         <div className="item">
           <img src={piccolo}></img>
-          <h2>Piccollo</h2>
-          <p>
-            Mild and smooth blend featuring notes of toasted almond and dried
-            cherry.
-          </p>
+          <div className="item-des">
+            <h2>Piccollo</h2>
+            <p>
+              Mild and smooth blend featuring notes of toasted almond and dried
+              cherry.
+            </p>
+          </div>
         </div>
         <div className="item">
           <img src={danche}></img>
-          <h2>Danche</h2>
-          <p>
-            Ethiopian hand-harvested blend densely packed with vibrant fruit
-            notes.
-          </p>
+          <div className="item-des">
+            <h2>Danche</h2>
+            <p>
+              Ethiopian hand-harvested blend densely packed with vibrant fruit
+              notes.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -84,27 +84,33 @@ const Home = () => {
         <div className="child-card-container">
           <div className="child-card">
             <img src={coffeebean}></img>
-            <h3>Best Quality</h3>
-            <p>
-              Discover an endless variety of the world’s best artisan coffee
-              from each of our roasters.
-            </p>
+            <div className="child-content">
+              <h3>Best Quality</h3>
+              <p>
+                Discover an endless variety of the world’s best artisan coffee
+                from each of our roasters.
+              </p>
+            </div>
           </div>
           <div className="child-card">
             <img src={benefits}></img>
-            <h3>Exclusive benefits</h3>
-            <p>
-              Special offers and swag when you subscribe, including 30% off your
-              first shipment.
-            </p>
+            <div className="child-content">
+              <h3>Exclusive benefits</h3>
+              <p>
+                Special offers and swag when you subscribe, including 30% off
+                your first shipment.
+              </p>
+            </div>
           </div>
           <div className="child-card">
             <img src={shipping}></img>
-            <h3>Free shipping</h3>
-            <p>
-              We cover the cost and coffee is delivered fast. Peak freshness:
-              guaranteed.
-            </p>
+            <div className="child-content">
+              <h3>Free shipping</h3>
+              <p>
+                We cover the cost and coffee is delivered fast. Peak freshness:
+                guaranteed.
+              </p>
+            </div>
           </div>
         </div>
       </section>
