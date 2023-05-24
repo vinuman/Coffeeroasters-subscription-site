@@ -51,6 +51,18 @@ const Create = () => {
     if (selection3 == "1000g" && selection5 == "Every Month") {
       setFinalPrice("42.00");
     }
+    if (selection1 !== "") {
+      setAccordion2(true);
+    }
+    if (selection2 !== "") {
+      setAccordion3(true);
+    }
+    if (selection3 !== "") {
+      setAccordion4(true);
+    }
+    if (selection4 !== "") {
+      setAccordion5(true);
+    }
   }, [selection1, selection2, selection3, selection4, selection5]);
 
   const handleMyPlanButton = () => {

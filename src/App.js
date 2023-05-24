@@ -4,6 +4,7 @@ import logo from "./assets/shared/desktop/logo.svg";
 import Home from "./Home";
 import About from "./About";
 import CreatePlan from "./Create";
+import Navmodal from "./Navmodal";
 
 import facebook from "./assets/shared/desktop/icon-facebook.svg";
 import twitter from "./assets/shared/desktop/icon-twitter.svg";
@@ -12,6 +13,7 @@ import instagram from "./assets/shared/desktop/icon-instagram.svg";
 function App() {
   return (
     <Router>
+      <Navmodal />
       <nav>
         <img src={logo}></img>
         <ul>
