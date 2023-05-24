@@ -13,7 +13,6 @@ import instagram from "./assets/shared/desktop/icon-instagram.svg";
 function App() {
   return (
     <Router>
-      <Navmodal />
       <nav>
         <img src={logo}></img>
         <ul>
@@ -44,6 +43,7 @@ function App() {
           <div className="line"></div>
           <div className="line"></div>
         </div>
+        <Navmodal />
       </nav>
 
       <Routes>

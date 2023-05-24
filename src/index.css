@@ -1088,16 +1088,29 @@ footer > nav > img {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--light-cream);
     z-index: 9999;
     overflow: hidden;
+
+    /* display: none; */
   }
 
   .modal-content-nav {
-    background-color: #fff;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    background-color: var(--light-cream);
     margin-top: 5%;
   }
 
   .show-nav {
     display: block;
+  }
+
+  .modal-window > img {
+    width: 2.6rem;
+    height: 2.6rem;
+    position: absolute;
+    top: 7%;
+    right: 7%;
   }
 }
