@@ -6,7 +6,6 @@ import danche from "./assets/home/desktop/image-danche.png";
 import coffeebean from "./assets/home/desktop/icon-coffee-bean.svg";
 import benefits from "./assets/home/desktop/icon-gift.svg";
 import shipping from "./assets/home/desktop/icon-truck.svg";
-import arrow from "./assets/plan/desktop/icon-arrow.svg";
 
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 
@@ -23,7 +22,9 @@ const Home = () => {
             curated artisan coffees from our best roasters delivered directly to
             your door, at your schedule.
           </p>
-          <button className="btn">Create your plan</button>
+          <Link to="/create-plan">
+            <button className="btn">Create your plan</button>
+          </Link>
         </div>
       </main>
 
@@ -153,9 +154,11 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <button style={{ marginBottom: "8rem" }} className="btn">
-          Create your plan
-        </button>
+        <Link to="/create-plan">
+          <button style={{ marginBottom: "8rem" }} className="btn">
+            Create your plan
+          </button>
+        </Link>
       </section>
     </>
   );

@@ -37,6 +37,11 @@ function App() {
             </Link>
           </li>
         </ul>
+        <div className="lines">
+          <div className="line"></div>
+          <div className="line"></div>
+          <div className="line"></div>
+        </div>
       </nav>
 
       <Routes>

@@ -46,6 +46,20 @@ li {
   color: var(--grey);
 }
 
+nav .lines {
+  width: 2rem;
+  display: none;
+}
+
+.line {
+  width: 2rem;
+  height: 0.3rem;
+  border: 1px solid black;
+  margin-bottom: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--dark-grey-blue);
+}
+
 main {
   padding-top: 2rem;
 }
@@ -53,6 +67,7 @@ main {
 main > img {
   border-radius: 1rem;
   filter: contrast(120%);
+  width: 100%;
 }
 
 .main-content {
@@ -208,6 +223,7 @@ main > img {
   align-items: center;
   padding-top: 6rem;
   padding-bottom: 4rem;
+  padding-left: 4rem;
   width: 80%;
 }
 
@@ -229,6 +245,7 @@ main > img {
   justify-content: space-between;
   width: 90%;
   padding-bottom: 4rem;
+  padding-left: 4rem;
 }
 
 .how-card {
@@ -603,7 +620,9 @@ main > img {
 .modal .modal-content > p {
   font-size: 2.4rem;
   color: var(--dark-grey-blue);
-  background-color: var(--light-cream);
+  width: 80%;
+  padding-left: 3rem;
+  text-align: center;
   margin-top: 4rem;
 }
 
@@ -916,5 +935,150 @@ footer > nav > img {
 
   #plan-btn {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  nav > ul {
+    display: none;
+  }
+  nav .lines {
+    display: block;
+  }
+
+  nav > img {
+    width: 16rem;
+    height: 1.8rem;
+  }
+  main > img {
+    height: 50rem;
+    filter: brightness(0.7);
+  }
+
+  .main-content {
+    position: absolute;
+    color: #fff;
+    top: 4%;
+    left: 10%;
+  }
+
+  .main-content > h1 {
+    width: 90%;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+  }
+  .main-content > p {
+    width: 90%;
+    font-size: 1.5rem;
+    opacity: 1;
+    line-height: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .our-collection {
+    margin-top: 5rem;
+  }
+
+  .our-collection > p {
+    font-size: 3.6rem;
+    width: 80%;
+    top: -2%;
+    left: 0%;
+    width: 100%;
+  }
+
+  .our-collection > .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .our-collection > .item > img {
+    margin-bottom: 1rem;
+  }
+  .our-collection > .item .item-des {
+    padding-left: 10%;
+    padding-bottom: 2rem;
+  }
+  .our-collection > .item .item-des > h2 {
+    text-align: left;
+  }
+  .our-collection > .item .item-des > p {
+    width: 90%;
+    text-align: left;
+  }
+  .why-us {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .main-card {
+    width: 90%;
+  }
+
+  .main-card > h2 {
+    font-size: 2.8rem;
+    width: 90%;
+  }
+  .main-card > p {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .child-card-container {
+    top: 70rem;
+  }
+
+  .child-card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .child-card > img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .child-card .child-content > h3 {
+    padding-left: 0rem;
+    width: 100%;
+    text-align: center;
+  }
+  .child-card .child-content > p {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+  .how-it-works {
+    margin-top: 70rem;
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .how-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2rem;
+    margin-left: 0;
+  }
+
+  .how-card {
+    width: 100% !important;
+    margin-left: 0;
+
+    text-align: center;
+  }
+
+  .directions {
+    display: none;
   }
 }
