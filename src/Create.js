@@ -1,7 +1,11 @@
 import arrow from "./assets/plan/desktop/icon-arrow.svg";
 import { useState, useEffect } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Create = () => {
+  const notify = () => toast("Thank you for ordering!");
+
   const [accordion1, setAccordion1] = useState(true);
   const [accordion2, setAccordion2] = useState(false);
   const [accordion3, setAccordion3] = useState(false);
@@ -134,11 +138,11 @@ const Create = () => {
 
       <section className="coffee-selection">
         <div className="coffee-selection-left">
-          <p className={selection1 ? "active" : ""}>01 Preferences</p>
-          <p className={selection2 ? "active" : ""}>02 Bean Type</p>
-          <p className={selection3 ? "active" : ""}>03 Quantity</p>
-          <p className={selection4 ? "active" : ""}>04 Grind option</p>
-          <p className={selection5 ? "active" : ""}>05 Deliveries</p>
+          <p>01 Preferences</p>
+          <p>02 Bean Type</p>
+          <p>03 Quantity</p>
+          <p>04 Grind option</p>
+          <p>05 Deliveries</p>
         </div>
         <div className="coffee-selection-right">
           <div className="accordion accordion1">
@@ -478,10 +482,13 @@ const Create = () => {
           </p>
           <div className="checkout">
             <p>${finalPrice}/mo</p>
-            <button className="btn">Checkout</button>
+            <button onClick={notify} className="btn">
+              Checkout
+            </button>
           </div>
         </div>
       </section>
+      <ToastContainer toastClassName="custom-toast" />
     </>
   );
 };
