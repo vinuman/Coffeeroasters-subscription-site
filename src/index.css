@@ -46,8 +46,11 @@ li {
   color: var(--grey);
 }
 
-nav .lines {
-  width: 2rem;
+.modal-lines {
+  display: none;
+}
+
+.modal-window {
   display: none;
 }
 
@@ -1081,6 +1084,10 @@ footer > nav > img {
     display: none;
   }
 
+  .modal-lines {
+    display: block;
+  }
+
   .modal-window {
     position: fixed;
     top: 0;
@@ -1111,5 +1118,120 @@ footer > nav > img {
     position: absolute;
     top: 7%;
     right: 7%;
+  }
+  .about-us {
+    height: 40rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0rem;
+  }
+
+  .about-us > h1 {
+    font-size: 2.4rem;
+  }
+  .about-us > p {
+    font-size: 1.5rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .commitment {
+    width: 100%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .commitment-left {
+    width: 100%;
+    height: 40rem;
+  }
+
+  .commitment-right {
+    width: 100%;
+    align-items: center;
+    padding-left: 0rem;
+    padding-top: 2rem;
+  }
+
+  .commitment-right > h2 {
+    font-size: 3.2rem;
+  }
+  .commitment-right > p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .quality {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .quality > h2 {
+    font-size: 2.8rem;
+  }
+  .quality > p {
+    font-size: 1.5rem;
+    width: 90%;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .quality-img {
+    width: 80%;
+    height: 15.6rem;
+    top: -8rem;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  .headquarters {
+    margin-top: 8rem;
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headquarters > h2 {
+    font-size: 2.4rem;
+    padding-bottom: 6rem;
+  }
+
+  .locations {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .location-card {
+    width: 100%;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .location-card > img {
+    margin: 0 auto;
+  }
+
+  .location-card > h3 {
+    font-size: 2.8rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  .location-card > address {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }

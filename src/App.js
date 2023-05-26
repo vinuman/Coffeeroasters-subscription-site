@@ -42,7 +42,7 @@ function App() {
             </Link>
           </li>
         </ul>
-        <div onClick={handleNavModalClick} className="lines">
+        <div onClick={handleNavModalClick} className="modal-lines">
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
