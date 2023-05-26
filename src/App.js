@@ -11,6 +11,10 @@ import twitter from "./assets/shared/desktop/icon-twitter.svg";
 import instagram from "./assets/shared/desktop/icon-instagram.svg";
 
 function App() {
+  const handleNavModalClick = () => {
+    document.querySelector(".modal-window").classList.add("show-nav");
+  };
+
   return (
     <Router>
       <nav>
@@ -38,7 +42,7 @@ function App() {
             </Link>
           </li>
         </ul>
-        <div className="lines">
+        <div onClick={handleNavModalClick} className="lines">
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>

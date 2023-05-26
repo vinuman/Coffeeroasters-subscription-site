@@ -2,10 +2,13 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import iconClose from "./assets/shared/mobile/icon-close.svg";
 
 const Navmodal = () => {
+  const handleNavModalClick1 = () => {
+    document.querySelector(".modal-window").classList.remove("show-nav");
+  };
   return (
     <>
       <div className="modal-window">
-        <img src={iconClose}></img>
+        <img onClick={handleNavModalClick1} src={iconClose}></img>
         <div
           style={{
             display: "flex",
@@ -18,6 +21,7 @@ const Navmodal = () => {
           className="modal-content-nav"
         >
           <Link
+            onClick={handleNavModalClick1}
             style={{
               textDecoration: "none",
               color: "#333D4B",
@@ -29,6 +33,7 @@ const Navmodal = () => {
             <p>Home</p>
           </Link>
           <Link
+            onClick={handleNavModalClick1}
             style={{
               textDecoration: "none",
               color: "#333D4B",
@@ -40,6 +45,7 @@ const Navmodal = () => {
             <p>About Us</p>
           </Link>
           <Link
+            onClick={handleNavModalClick1}
             style={{
               textDecoration: "none",
               color: "#333D4B",

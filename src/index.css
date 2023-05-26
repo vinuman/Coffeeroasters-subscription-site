@@ -1091,8 +1091,7 @@ footer > nav > img {
     background-color: var(--light-cream);
     z-index: 9999;
     overflow: hidden;
-
-    /* display: none; */
+    display: none;
   }
 
   .modal-content-nav {
