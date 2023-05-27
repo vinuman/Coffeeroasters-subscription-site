@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <Router>
+    <Router basename="/Coffeeroasters-subscription-site">
       <nav>
         <Link to="/">
           {" "}
