@@ -18,7 +18,11 @@ function App() {
   return (
     <Router>
       <nav>
-        <img src={logo}></img>
+        <Link to="/">
+          {" "}
+          <img src={logo}></img>
+        </Link>
+
         <ul>
           <li>
             <Link style={{ textDecoration: "none", color: "#83888F" }} to="/">
