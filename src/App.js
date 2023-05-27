@@ -16,7 +16,7 @@ function App() {
   };
 
   return (
-    <Router basename="/Coffeeroasters-subscription-site">
+    <Router basename="/">
       <nav>
         <Link to="/">
           {" "}
@@ -55,7 +55,11 @@ function App() {
       </nav>
 
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route
+          exact
+          path="/Coffeeroasters-subscription-site"
+          element={<Home />}
+        />
         <Route path="/about" element={<About />} />
         <Route path="/create-plan" element={<CreatePlan />} />
       </Routes>
