@@ -1,4 +1,3 @@
-/* import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"; */
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import logo from "./assets/shared/desktop/logo.svg";
 import Home from "./Home";
@@ -55,11 +54,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route
-          exact
-          path="/Coffeeroasters-subscription-site"
-          element={<Home />}
-        />
+        <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/create-plan" element={<CreatePlan />} />
       </Routes>
