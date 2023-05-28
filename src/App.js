@@ -15,7 +15,7 @@ function App() {
   };
 
   return (
-    <Router basename="/">
+    <Router>
       <nav>
         <Link to="/">
           {" "}
