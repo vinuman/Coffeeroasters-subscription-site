@@ -20,7 +20,8 @@ html {
 }
 
 body {
-  padding: 4rem 8rem 4rem 8rem;
+  /* padding: 4rem 8rem 4rem 8rem; */
+  padding: 5% 10% 5% 10%;
   background-color: var(--light-cream);
   position: relative;
 }
@@ -70,7 +71,7 @@ main {
 main > img {
   border-radius: 1rem;
   filter: contrast(120%);
-  width: 100%;
+  min-width: 100%;
 }
 
 .main-content {
@@ -1212,7 +1213,6 @@ footer > nav > img {
   .quality {
     align-items: center;
     padding-left: 0;
-
     margin-top: 10rem;
   }
 
